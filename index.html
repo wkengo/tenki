@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#173b65"><title>気温・天気情報</title><link rel="stylesheet" href="styles.css"></head>
+<body><main>
+  <header><div class="brand"><span class="brand-mark">☀</span><div><p>WEATHER DASHBOARD</p><h1>気温・天気情報</h1></div></div><div class="updated">最終取得 <b id="updated">—</b></div></header>
+  <div class="location-bar"><div class="selectors"><label>地方<select id="region"></select></label><span>›</span><label>都道府県<select id="pref"></select></label><span>›</span><label>市区町村<select id="city"></select></label></div><button id="locate">⌖ 現在地を使う</button></div>
+  <div class="status"><i id="status-dot" class="pulse"></i><b id="place">地域を確認中</b><span id="status">現在地を確認しています…</span></div>
+  <div id="content"><div class="loading-card">天気情報を読み込んでいます…</div></div>
+  <footer><p><b>情報源：</b>気象データは <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a>（日本では気象庁MSM・GSM等を含む複数モデルから自動選択）、地域データは <a href="https://github.com/geolonia/japanese-addresses-v2" target="_blank" rel="noopener">Geolonia 住所データ v2</a>（デジタル庁アドレス・ベース・レジストリを加工）を使用しています。</p><p class="note">※ 昨日の欄も観測所の確定観測値ではなく、同APIが提供する過去時間帯のモデル値です。防災判断には<a href="https://www.jma.go.jp/" target="_blank" rel="noopener">気象庁</a>の最新情報をご確認ください。</p></footer>
+</main><script src="app.js"></script></body></html>

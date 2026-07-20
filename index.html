@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#173b65"><title>気温・天気情報</title><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="compact.css"></head><body><main>
   <div id="content"><div class="loading-card">天気情報を読み込んでいます…</div></div>
+  <div class="view-switch" role="group" aria-label="表示する日を切り替える"><button id="view-yesterday" class="active" type="button">昨日・今日</button><button id="view-tomorrow" type="button">今日・明日</button></div>
   <div class="settings-bottom">
     <header><div class="brand"><span class="brand-mark">☀</span><div><p>WEATHER DASHBOARD</p><h1>気温・天気情報</h1></div></div><div class="updated">最終取得 <b id="updated">—</b></div></header>
     <div class="location-bar"><div class="selectors"><label>地方<select id="region"></select></label><span>›</span><label>都道府県<select id="pref"></select></label><span>›</span><label>市区町村<select id="city"></select></label></div><button id="locate">⌖ 現在地を使う</button></div>
     <div class="status"><i id="status-dot" class="pulse"></i><b id="place">地域を確認中</b><span id="status">現在地を確認しています…</span></div>
-    <div class="view-switch" role="group" aria-label="表示する日を切り替える"><button id="view-yesterday" class="active" type="button">昨日・今日</button><button id="view-tomorrow" type="button">今日・明日</button></div>
   </div>
   <footer><p><b>情報源：</b>経過時間は<a href="https://www.jma.go.jp/bosai/amedas/" target="_blank" rel="noopener">気象庁アメダス</a>の最寄り観測所、降水確率は気象庁の6時間予報、その他の予報値は<a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a>を使用しています。地域データは<a href="https://github.com/geolonia/japanese-addresses-v2" target="_blank" rel="noopener">Geolonia住所データv2</a>を使用しています。</p><p class="note">※ 観測所と選択地域には距離があります。欠測項目は予報モデル値で補完します。防災判断には気象庁の最新情報をご確認ください。</p></footer>
 </main><script src="app.js"></script></body></html>
